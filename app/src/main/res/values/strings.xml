@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TestRG</string>
+    <string name="login_welcome">Hey, Welcome, Login to access Task Management.</string>
+    <string name="signup_welcome">Hey, Welcome, Signup to access Task Management.</string>
+    <string name="email">Email Id</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+
+    <string name="not_a_member">Not a Member Yet ? <u>Signup</u>.</string>
+    <string name="already_a_member">Already a Member! <u>Login</u>.</string>
+    <string name="logout">Logout</string>
+    <string name="add_task_message">Hey, You can Add your Task Here.</string>
+    <string name="add_user_message">Hey, You can Add a User Here.</string>
+    <string name="save">Save</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="create">Create</string>
+    <string name="name">Name</string>
+    <string name="please_enter_name">Please Enter Name</string>
+    <string name="please_enter_email">Please Enter Valid Email</string>
+    <string name="please_enter_password">Please Enter Password</string>
+    <string name="oops">Oops</string>
+    <string name="success">Success</string>
+    <string name="no_task_created">No Task Added Yet.</string>
+    <string name="no_user_added_yet">No Users Added Yet.</string>
+    <string name="user_created">User Created Successfully.</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="task_created">Task Created.</string>
+
+</resources>

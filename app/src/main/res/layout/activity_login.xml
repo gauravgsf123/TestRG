@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.login.LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.gaurav.testrg.custom.BoldTextView
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/login_welcome"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.gaurav.testrg.custom.RegularTextInputLayout
+                android:id="@+id/textInputLayoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:hint="@string/email"
+                app:startIconTint="@color/colorPrimary"
+                app:startIconDrawable="@drawable/ic_email"
+                app:layout_constraintTop_toBottomOf="@+id/header_title">
+
+                <com.gaurav.testrg.custom.RegularTextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:gravity="start|center"
+                    android:textSize="@dimen/_12sdp"
+                    android:maxLength="50"
+                    android:imeOptions="actionNext"
+                    android:textDirection="anyRtl"
+                    tools:text="MAXPACIFIC"/>
+
+            </com.gaurav.testrg.custom.RegularTextInputLayout>
+
+
+            <com.gaurav.testrg.custom.RegularTextInputLayout
+                android:id="@+id/textInputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:hint="@string/password"
+                app:passwordToggleEnabled="true"
+                app:startIconTint="@color/colorPrimary"
+                app:startIconDrawable="@drawable/ic_password"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEmail">
+                <com.gaurav.testrg.custom.RegularTextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/_12sdp"
+                    tools:text="9988776655"/>
+            </com.gaurav.testrg.custom.RegularTextInputLayout>
+
+
+            <com.gaurav.testrg.custom.RegularButton
+                android:id="@+id/login"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="@string/login"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputPassword"/>
+
+            <com.gaurav.testrg.custom.RegularTextView
+                android:id="@+id/not_a_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/not_a_member"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/login"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
